@@ -2,9 +2,9 @@
 
 > 用户洞察 · AI 产品设计 · 对话评测
 
-**作品概览：** 独立搭建的 Coze 电商客服模拟原型，展示从场景定义、测试标准、实际回答到问题分析与复测的工作过程。当前是可用于面试讨论的原型与开发评测记录，不是已上线客服系统；仓库收录评测设计和原始回答，不含完整评论数据或 60 条题集。
+**作品概览：** 独立搭建的 Coze 电商客服模拟原型，展示从场景定义、测试标准、实际回答到问题分析与复测的工作过程。当前是可用于面试讨论的原型与开发评测记录，不是已上线客服系统；仓库收录 60 条题目草稿及部分真实测试回答，不含完整评论数据。
 
-**快速阅读：** [验证码安全补充测试](OTP_SAFETY_ITERATION.md) · [三道回归题及原始回答](REGRESSION_2026-10-19.md) · [验证码案例与迭代](V2_COMPARISON.md) · [评测设计](EVALUATION.md)
+**快速阅读：** [60 条评测题草稿](EVALUATION_CASES.md) · [验证码安全补充测试](OTP_SAFETY_ITERATION.md) · [三道回归题及原始回答](REGRESSION_2026-10-19.md) · [评测设计](EVALUATION.md)
 
 ## 项目目标
 
@@ -47,9 +47,9 @@
 
 > User insights · AI product design · Conversation evaluation
 
-**At a glance:** An independently built Coze customer-support simulation demonstrating scenario definition, evaluation criteria, actual responses, issue analysis and retesting. This is an interview-ready prototype and development-evaluation record, not a deployed support system. The repository contains evaluation design and raw responses, not the complete review data or 60-case set.
+**At a glance:** An independently built Coze customer-support simulation demonstrating scenario definition, evaluation criteria, actual responses, issue analysis and retesting. This is an interview-ready prototype and development-evaluation record, not a deployed support system. The repository contains 60 draft cases and selected actual test responses, not the complete review data.
 
-**Start here:** [Additional OTP safety tests](OTP_SAFETY_ITERATION.md) · [Three regression cases and raw responses](REGRESSION_2026-10-19.md) · [OTP case and iteration](V2_COMPARISON.md) · [Evaluation design](EVALUATION.md)
+**Start here:** [60 draft evaluation cases](EVALUATION_CASES.md) · [Additional OTP safety tests](OTP_SAFETY_ITERATION.md) · [Three regression cases and raw responses](REGRESSION_2026-10-19.md) · [Evaluation design](EVALUATION.md)
 
 ## Goal
 
