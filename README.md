@@ -4,7 +4,7 @@
 
 **作品概览：** 独立搭建的 Coze 电商客服模拟原型，展示从场景定义、测试标准、实际回答到问题分析与复测的工作过程。当前是可用于面试讨论的原型与开发评测记录，不是已上线客服系统；仓库收录评测设计和原始回答，不含完整评论数据或 60 条题集。
 
-**快速阅读：** [三道回归题及原始回答](REGRESSION_2026-10-19.md) · [验证码案例与迭代](V2_COMPARISON.md) · [评测设计](EVALUATION.md)
+**快速阅读：** [验证码安全补充测试](OTP_SAFETY_ITERATION.md) · [三道回归题及原始回答](REGRESSION_2026-10-19.md) · [验证码案例与迭代](V2_COMPARISON.md) · [评测设计](EVALUATION.md)
 
 ## 项目目标
 
@@ -31,6 +31,8 @@
 
 2026 年 10 月 19 日补充了人工客服、优惠券注入和物流延误三题的[回归观察与原文](REGRESSION_2026-10-19.md)；均满足各自预设检查，运行时规则尚未直接核验，不能据此报告整体提升率。
 
+同日新增[验证码安全补充测试](OTP_SAFETY_ITERATION.md)：保存针对验证码已泄露场景的规则后，一次复测仍遗漏「不要再分享验证码」的提醒；未直接核验运行时加载，不能认定修复成功。
+
 下一步：核验预览实际加载的规则 → 分析安全场景并进一步迭代 → 多次采样、开发集回归及保留集检验 → 人工检查评论与测试题并核对知识库适用市场。
 
 ## 数据与边界
@@ -47,7 +49,7 @@
 
 **At a glance:** An independently built Coze customer-support simulation demonstrating scenario definition, evaluation criteria, actual responses, issue analysis and retesting. This is an interview-ready prototype and development-evaluation record, not a deployed support system. The repository contains evaluation design and raw responses, not the complete review data or 60-case set.
 
-**Start here:** [Three regression cases and raw responses](REGRESSION_2026-10-19.md) · [OTP case and iteration](V2_COMPARISON.md) · [Evaluation design](EVALUATION.md)
+**Start here:** [Additional OTP safety tests](OTP_SAFETY_ITERATION.md) · [Three regression cases and raw responses](REGRESSION_2026-10-19.md) · [OTP case and iteration](V2_COMPARISON.md) · [Evaluation design](EVALUATION.md)
 
 ## Goal
 
@@ -73,6 +75,8 @@ Existing materials include a review-analysis workbook, a list of Help Centre art
 One prompt iteration and preview tests are documented in the [comparison](V2_COMPARISON.md). The post-reconnection OTP response explicitly warned against sharing the code but still made an unsupported categorical claim. The runtime prompt has not been independently audited; improvement has not been established.
 
 On 19 October 2026, [three regression observations with raw responses](REGRESSION_2026-10-19.md) covered human escalation, coupon injection and delivery delay. All met their individual predefined checks; the runtime rules were not directly verified and no overall improvement rate can be inferred.
+
+The [additional OTP safety tests](OTP_SAFETY_ITERATION.md) found that after saving a rule for disclosed codes, one recheck still omitted an explicit warning against sharing another code. Runtime loading was not directly verified; a fix has not been established.
 
 Next: verify which rules the preview actually loads → refine the safety scenario → repeat sampling, run regression checks and evaluate held-out cases → review the comments, test cases and market-specific knowledge-base sources.
 
