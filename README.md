@@ -6,6 +6,16 @@
 
 **快速阅读：** [60 条评测题草稿](EVALUATION_CASES.md) · [验证码安全补充测试](OTP_SAFETY_ITERATION.md) · [三道回归题及原始回答](REGRESSION_2026-10-19.md) · [评测设计](EVALUATION.md)
 
+## Coze 工作页面与测试 / Coze workspace and tests
+
+**物流延误测试 / Delivery-delay test**：用户询问物流延误，原型说明无法查询实时订单，并引导用户通过官方渠道核实。 / The prototype explains that it cannot access live order data and directs the user to official channels.
+
+![Coze 物流延误测试工作页面 / Coze delivery-delay test workspace](regression-delivery-20261019.jpg)
+
+**验证码安全复测 / OTP safety retest**：截图展示规则迭代与预览回答；该次回答仍遗漏了不要再次分享验证码的明确提醒，详见[测试记录](OTP_SAFETY_ITERATION.md)。 / The screenshot shows a rule iteration and preview response; this response still omitted an explicit warning not to share another code. See the [test record](OTP_SAFETY_ITERATION.md).
+
+![Coze 验证码安全复测工作页面 / Coze OTP safety retest workspace](otp-safety-after-20261019.jpg)
+
 ## 项目目标
 
 围绕东南亚电商买家的物流、退款和客服咨询场景，设计一个能依据可靠资料回答、识别自身能力边界并在必要时转人工的客服助手。重点不是让机器人回答所有问题，而是减少无效对话，并避免在缺少订单信息或政策依据时做出错误承诺。
